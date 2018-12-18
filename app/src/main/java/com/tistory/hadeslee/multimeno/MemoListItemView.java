@@ -68,7 +68,8 @@ public class MemoListItemView extends LinearLayout {
                 bitmap = BitmapFactory.decodeFile(BasicInfo.FOLDER_PHOTO + data, options);
 
                 itemPhoto.setImageBitmap(bitmap);
-			}
+
+            }
 		} else {
 			throw new IllegalArgumentException();
 		}

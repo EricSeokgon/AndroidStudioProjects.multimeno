@@ -7,7 +7,7 @@ public class MemoListItem {
 	/**
 	 * Data array
 	 */
-	private Object[] mData;
+	private String[] mData;
 
 	/**
 	 * Item ID
@@ -25,7 +25,7 @@ public class MemoListItem {
 	 * @param obj
 	 *
 	 */
-	public MemoListItem(String itemId, Object[] obj) {
+	public MemoListItem(String itemId, String[] obj) {
 		mId = itemId;
 		mData = obj;
 	}
@@ -47,7 +47,7 @@ public class MemoListItem {
 			)
 	{
 		mId = memoId;
-		mData = new Object[10];
+		mData = new String[10];
 		mData[0] = memoDate;
 		mData[1] = memoText;
 		mData[2] = id_handwriting;
@@ -88,14 +88,14 @@ public class MemoListItem {
 	 *
 	 * @return
 	 */
-	public Object[] getData() {
+	public String[] getData() {
 		return mData;
 	}
 
 	/**
 	 * Get data
 	 */
-	public Object getData(int index) {
+	public String getData(int index) {
 		if (mData == null || index >= mData.length) {
 			return null;
 		}
